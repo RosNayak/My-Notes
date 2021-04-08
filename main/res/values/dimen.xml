@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bigMargin">16dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="smallMargin">4dp</dimen>
+
+    <dimen name="bigText">20sp</dimen>
+    <dimen name="text">15sp</dimen>
+    <dimen name="smallText">10sp</dimen>
+
+    <dimen name="bigPadding">12dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="smallPadding">4dp</dimen>
+</resources>

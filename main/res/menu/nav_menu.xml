@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/notes"
+        android:title="@string/notes"
+        android:icon="@drawable/note"/>
+
+    <item android:id="@+id/checklist"
+        android:title="@string/checklist"
+        android:icon="@drawable/list"/>
+
+    <item android:id="@+id/starred"
+        android:title="@string/starred"
+        android:icon="@drawable/star"/>
+
+    <item android:id="@+id/trash"
+        android:title="@string/restore_from_trash"
+        android:icon="@drawable/trash"/>
+
+    <item android:id="@+id/manageCategories"
+        android:title="@string/manage_categories"
+        android:icon="@drawable/category"/>
+
+    <item android:id="@+id/categories"
+        android:title="@string/categories">
+
+        <menu>
+            <item android:id="@+id/uncategorized"
+                android:title="@string/uncategorized"/>
+        </menu>
+
+    </item>
+
+</menu>

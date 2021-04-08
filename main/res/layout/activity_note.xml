@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NoteActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/noteAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/noteToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white">
+
+            <TextView
+                android:id="@+id/toolBarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:text="@string/uncategorized"
+                android:textSize="@dimen/text"
+                android:padding="@dimen/bigPadding"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_title"
+        android:textSize="@dimen/bigText"
+        android:textColor="@color/black"
+        android:textColorHint="@color/textColor1"
+        android:textStyle="bold"
+        android:background="#0000"
+        android:paddingTop="@dimen/bigPadding"
+        android:paddingStart="@dimen/bigPadding"
+        android:paddingEnd="@dimen/bigPadding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteAppBar"/>
+
+    <EditText
+        android:id="@+id/noteContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="@dimen/bigText"
+        android:textColor="@color/black"
+        android:hint="@string/enter_content"
+        android:textColorHint="@color/textColor1"
+        android:paddingTop="@dimen/bigPadding"
+        android:paddingStart="@dimen/bigPadding"
+        android:paddingEnd="@dimen/bigPadding"
+        android:gravity="start|top"
+        android:background="#0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/noteTitle"
+        app:layout_constraintBottom_toTopOf="@+id/save"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor1"
+        android:textSize="@dimen/text"
+        android:textStyle="bold"
+        android:padding="@dimen/bigPadding"
+        android:text="@string/save_note"
+        android:gravity="center"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
